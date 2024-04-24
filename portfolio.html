@@ -24,7 +24,7 @@ title: Portfolio
                 <a href="{{ project.link }}">Learn more</a>
                 <!-- Optionally display an image if the URL is provided -->
                 {% if project.image_url %}
-                <img src="{{ project.image_url }}" alt="Image for {{ project.name }}">
+                <img src="{{ project.image_url }}" alt="Image for {{ project.name }}" style="width: 100%; max-width: 500px;">
                 {% endif %}
             </li>
             {% endfor %}
