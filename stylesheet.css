@@ -1,6 +1,6 @@
 /*global style*/
 body {
-    background-color: #ffffcc; /* Northern-Lights-Beach-1-hex */
+    background-color: #001120; /* Northern-Lights-Beach-1-hex */
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: normal;
     margin-top: 50px;
@@ -9,6 +9,7 @@ body {
     width:95%;
     padding-left:100px;
     text-align: center;
+    color: #fff;
 }
 
     .links a {
