@@ -16,5 +16,5 @@ author:
   github: https://github.com/GrignardReagent
 
 # Plugins (if any)
-plugins:
-  - jekyll-feed # example plugin, generates an RSS feed
+#plugins:
+#  - jekyll-feed # example plugin, generates an RSS feed
