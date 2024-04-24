@@ -15,12 +15,59 @@ title: Home
 <header>
         <h1>Welcome to My Personal Website</h1>
 
-    </header>
+</header>
     <main>
         <section>
             <h2>Hello, I'm {{ site.author.name }}</h2>
-            <p>Welcome to my professional portfolio website. I am a MSc student in Bioinformatics at the University of Edinburgh. Explore my website to learn more about my academic projects and professional experiences.</p>
+            <p>Welcome to my personal website! I am an MSc student in Bioinformatics at the University of Edinburgh. Explore my website to learn more about my academic projects and professional experiences! I will be continuously updating this site with my latest projects and news. Keep an eye out for new content!</p> 
         </section>
+
+<!-- slideshow container -->
+<div class="main-content">
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="CADD.png" style="width:100%">
+        <div class="text">My research interest: Computer-Aided Drug Design (CADD)</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="molmim.png" style="width:100%">
+        <div class="text">How can we accelerate CADD? The answer lies within molecule generation using diffusion models like <a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c00667">SILVR</a>!</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="MBL.jpg" style="width:100%">
+        <div class="text">I'm mainly interested in using diffusion model to design new drugs targeting beta-lactamase, a protein expressed in multidrug-resistant bacteria.</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div class="dots" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    </div> <!-- end of main-content -->
+    
+    <div class="news-updates">
+    <section id="news-updates">
+    <div>
+        <h2>Latest News</h2>
+        <ul>
+            <li><strong>March 15, 2024:</strong> Our database has been updated with the latest compounds for combating antimicrobial resistance (AMR) from recent research.</li>
+            <li><strong>February 10, 2024:</strong> We've introduced a new feature for molecular generation, with help from NVIDIA's MolMIM API.</li>
+            <li><strong>January 20, 2024:</strong> Join us for our annual hit discovery webinar series starting next month.</li>
+        </ul>
+        <a href="https://www.linkedin.com/in/ianyangxi/" style="color: #0D0D0D;">Read more updartes from myself on my LinkedIn</a>
+    </div>
+    </section>
+
         <section>
             <h2>Latest Projects</h2>
             <ul>
@@ -34,6 +81,38 @@ title: Home
             </ul>
         </section>
     </main>
+
+<!-- JAVASCRIPT FOR THE SLIDESHOW -->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
 </body>
 </html>
