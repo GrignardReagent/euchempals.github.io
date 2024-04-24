@@ -217,14 +217,14 @@ th, td {
 
 /* slideshow container */
 .slideshow-container {
-    max-width: 90%; /* set the width to half of its parent container i.e. the webpage */
+    max-width: 80%; /* set the width to half of its parent container i.e. the webpage */
     position: relative;
     margin: 0 auto; /* align the container to the center horizontally */
     align-items: center;
 }
 /* resize the images inside the slideshow */  
 .slideshow-container img {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
@@ -268,7 +268,7 @@ border-radius: 3px 0 0 3px;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: bold;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     bottom: auto; /* position the text at the bottom */
     width: 100%;
     text-align: center;
