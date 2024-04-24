@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body>
     <header>
+<!--        this is the menu bar, it's on every page of the website-->
         <nav>
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
                 <li><a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a></li>
-                <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
                 <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
             </ul>
         </nav>
