@@ -33,7 +33,7 @@ th, td {
 /* hyperlink */
 .tab a {
     font-family: 'Open Sans', Arial, sans-serif;
-    color: white; /* white for text */
+    color: #0D0D0D; 
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -81,7 +81,7 @@ th, td {
     background-color: inherit;
     font-weight: inherit;
     font-size: 17px;
-    color: white; /* white for text */
+    color: #0D0D0D; 
     border: none;
     outline: none;
     cursor: pointer;
@@ -152,7 +152,7 @@ th, td {
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
+    color: #0D0D0D;
     font-weight: bold;
 }
 
@@ -167,23 +167,20 @@ th, td {
     opacity: 0.9;
 }
 
-
+/* I should probably get rid of the below as they serve no purpose */
 .links a {
         margin: 10px;
         display: inline-block;
         text-decoration: none;
-        color: #fff;
+        color: #0D0D0D;
         padding: 10px 20px;
         border-radius: 20px;
     }
 
-
-
-
-    .table-centered {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.table-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*collapsible tab*/

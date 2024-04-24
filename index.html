@@ -58,13 +58,17 @@ title: Home
     <div class="news-updates">
     <section id="news-updates">
     <div>
-        <h2>Latest News</h2>
-        <ul>
-            <li><strong>March 15, 2024:</strong> Our database has been updated with the latest compounds for combating antimicrobial resistance (AMR) from recent research.</li>
-            <li><strong>February 10, 2024:</strong> We've introduced a new feature for molecular generation, with help from NVIDIA's MolMIM API.</li>
-            <li><strong>January 20, 2024:</strong> Join us for our annual hit discovery webinar series starting next month.</li>
-        </ul>
-        <a href="https://www.linkedin.com/in/ianyangxi/" style="color: #0D0D0D;">Read more updartes from myself on my LinkedIn</a>
+        <h1>Latest Professional Updates</h1>
+<ul>
+  {% for update in site.data.linkedin_updates %}
+  <li>
+    <strong>{{ update.date }}: {{ update.title }}</strong>
+    <p>{{ update.description }}</p>
+    <a href="{{ update.link }}">Read more</a>
+  </li>
+  {% endfor %}
+</ul>
+        <a href="https://www.linkedin.com/in/ianyangxi/" style="color: #0D0D0D;">Find me on LinkedIn</a>
     </div>
     </section>
 
