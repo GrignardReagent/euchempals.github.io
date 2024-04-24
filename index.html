@@ -65,7 +65,7 @@ title: Home
     <strong>{{ update.date }}: {{ update.title }}</strong>
     <p>{{ update.description }}</p>
     {% if update.image_url %}
-                <img src="{{ update.image_url }}" alt="Image for {{ update.name }}">
+                <img src="{{ update.image_url }}" alt="Image for {{ update.name }}" style="width: 100%; max-width: 500px;">
                 {% endif %}
     <a href="{{ update.link }}">Read more</a>
   </li>
