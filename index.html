@@ -1,15 +1,49 @@
+---
+layout: default
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title>Personal Website for GrignardReagent</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 
 <body>
-<h1>
-    This website is under construction.
-</h1>
+<header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hello, I'm {{ site.author.name }}</h2>
+            <p>Welcome to my professional portfolio website. I am a MSc student in Bioinformatics at the University of Edinburgh. Explore my website to learn more about my academic projects and professional experiences.</p>
+        </section>
+        <section>
+            <h2>Latest Projects</h2>
+            <ul>
+                {% for project in site.data.projects limit:3 %}
+                <li>
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © {{ "now" | date: "%Y" }} {{ site.author.name }}</p>
+    </footer>
 </body>
 </html>

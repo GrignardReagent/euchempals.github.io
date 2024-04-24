@@ -1,0 +1,20 @@
+title: Personal Website for Xi Yang (Ian)
+email: ian16yang@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my personal website where I share my projects, portfolio, and blog posts about my journey in bioinformatics and computational chemistry.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://grignardreagent.github.io" # the base hostname & URL for your site
+
+# Build settings
+theme: minima # Jekyll theme to use
+
+author:
+  name: Xi Yang (Ian)
+  bio: MSc Bioinformatics Student, Peer Support Student Coordinator and Student Ambassador @ University of Edinburgh | RSC Broadening Horizons Participant
+  twitter: Xi_Yang_Ian
+  linkedin: https://www.linkedin.com/in/ianyangxi/
+  github: https://github.com/GrignardReagent
+
+# Plugins (if any)
+plugins:
+  - jekyll-feed # example plugin, generates an RSS feed
