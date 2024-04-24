@@ -17,6 +17,124 @@ th, td {
     padding: 10px;
     text-align: center;
 }
+/* -------------------------STYLING FOR THE MENU (default.html) PAGE------------------------ */
+/* style the menu tab */
+.tab {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold; /* make the text bold */
+    background-color: #001120; /* Northern-Lights-Beach-1-hex for background */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none; /* removes the underline from the hyperlink */
+}
+
+/* hyperlink */
+.tab a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white; /* white for text */
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    transition: all 0.3s ease; /* adds a smooth transition to the hover effect */
+    font-size: 17px;
+    text-decoration: none; /* removes the underline from the hyperlink */
+}
+/* change the color of the hyperlink on hover */
+.tab a:hover,.dropdown:hover .dropbtn {background-color: #025939; /* Northern-Lights-Beach-2-hex for hover background */;}
+
+/* button */
+.tab .button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab .button:hover {
+    background-color: #025939; /* Northern-Lights-Beach-2-hex for button hover */
+}
+
+.tab .button.active {
+    background-color: #027333; /* Northern-Lights-Beach-3-hex for active button */
+}
+
+/* style the dropdown */
+.dropdown {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    float: left;
+    background-color: #001120;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    position:relative;
+}
+
+/* dropdown button */
+.dropdown .dropbtn {
+    font-family: inherit;
+    background-color: inherit;
+    font-weight: inherit;
+    font-size: 17px;
+    color: white; /* white for text */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #025939;
+}
+
+/* style the dropdown content */
+.dropdown-content {
+    background-color: #03A63C;
+    text-decoration: none;
+    display: none;
+    position: absolute; /* position the dropdown content */
+    z-index: 1; /* place the dropdown content on top of the page */
+    left: 0; /* align it to the left side of the dropdown button */
+    top:100%; /* make it drop down just below the tab */
+}
+
+.dropdown-content a {
+    float: none;
+    color: #001120; /* Northern-Lights-Beach-1-hex for dropdown links */
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* change the color of the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #025939; /* Northern-Lights-Beach-2-hex for dropdown link hover */
+}
+
+/* show the dropdown content when the dropdown is hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add responsiveness to the menu for mobile devices */
+@media screen and (max-width: 600px) {
+    .tab {
+        flex-direction: column;
+    }
+    .dropdown .dropbtn, .tab a {
+        width: 100%;
+        text-align: left; /* Align text to the left for mobile */
+    }
+}
+
+
 
 
 /* ------------------------STYLING THE CONTACT PAGE ------------------------*/
