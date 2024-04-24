@@ -42,7 +42,7 @@ th, td {
     text-decoration: none; /* removes the underline from the hyperlink */
 }
 /* change the color of the hyperlink on hover */
-.tab a:hover,.dropdown:hover .dropbtn {background-color: #D9B79A; /* Northern-Lights-Beach-2-hex for hover background */;}
+.tab a:hover,.dropdown:hover .dropbtn {background-color: #D9B79A;}
 
 /* button */
 .tab .button {
