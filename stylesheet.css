@@ -1,0 +1,102 @@
+/*global style*/
+body {
+    background-color: #ffffcc; /* Northern-Lights-Beach-1-hex */
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-left:auto;
+    margin:auto;
+    width:95%;
+    padding-left:100px;
+    text-align: center;
+}
+
+    .links a {
+        margin: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .instagram { background-color: rgb(255,100,2); }
+    .eusa { background-color: #4267B2; }
+    .sitevisit { background-color: #1DA1F2; }
+    .fourPmockpres { background-color: #2867B2; }
+    .CommitteeSignUp { background-color: #333; }
+    .employedInternships {background-color: #E1306C}
+
+    .timedlinks a {
+        margin: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .table-centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    .hamburger-icon {
+display: inline-block;
+width: 20px;
+height: 2px;
+background-color: black; /* Adjust color as needed */
+position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: black; /* Adjust color as needed */
+left: 0;
+}
+
+.hamburger-icon::before {
+top: -6px;
+}
+
+.hamburger-icon::after {
+bottom: -6px;
+}
+/*collapsible tab*/
+.collapsible {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+/* ------------------------Color Theme Swatches in Hex------------------------ */
+.Northern-Lights-Beach-1-hex { color: #001120; }
+.Northern-Lights-Beach-2-hex { color: #025939; }
+.Northern-Lights-Beach-3-hex { color: #027333; }
+.Northern-Lights-Beach-4-hex { color: #03A63C; }
+.Northern-Lights-Beach-5-hex { color: #04D939; }
