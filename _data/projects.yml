@@ -1,9 +1,14 @@
-- name: Project One
-  description: An in-depth look at bioinformatics algorithms for genome sequencing.
-  link: http://example.com/project-one
-  image_url: http://example.com/image-one.png
+- name: MSc Bioinformatics Research Project
+  description: Exploring Drug Discovery Strategies for Metallo ß-lactamase (MBL) using Diffusion Models for Molecular Generation
+  link: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c00667
+  image_url: https://grignardreagent.github.io/bioinf_rp_v2.drawio.png
 
-- name: Project Two
-  description: Developing a new peer support model for students in Chemistry.
-  link: http://example.com/project-two
-  image_url: http://example.com/image-two.png
+- name: ProteoQuest
+  description: An interactive tool built using Python for exploring protein sequences within the NCBI protein database. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 2 and obtained 90%.
+  link: https://github.com/GrignardReagent/ProteoQuest
+  image_url: https://grignardreagent.github.io/BPSM_ICA2.webp
+
+- name: Pipeline Development for the Dynamic Bioinformatics Analysis of Genomic Data
+  description: A bioinformatics tool built entirely in Bash, for running fastqc, sequence alignment and bioinformatics analysis of a dynamic genomic dataset. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 1 and obtained 85%.
+  link: https://github.com/GrignardReagent/ProteoQuest
+  image_url: https://grignardreagent.github.io/BPSM_ICA1.webp
