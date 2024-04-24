@@ -19,23 +19,37 @@ th, td {
 }
 
 
-/* LOCAL FORMATTING STYLES */
-    .links a {
-        margin: 10px;
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 20px;
-    }
-    .instagram { background-color: rgb(255,100,2); }
-    .eusa { background-color: #4267B2; }
-    .sitevisit { background-color: #1DA1F2; }
-    .fourPmockpres { background-color: #2867B2; }
-    .CommitteeSignUp { background-color: #333; }
-    .employedInternships {background-color: #E1306C}
+/* ------------------------STYLING THE CONTACT PAGE ------------------------*/
+/* Social Media Section Styles */
+#social-media {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    .timedlinks a {
+.social-button {
+    /* Generic button styles */
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Specific styles for each social media platform */
+.facebook { background-color:  #025939; }
+.twitter { background-color: #027333; }
+.instagram { background-color: #03A63C; }
+.linkedin { background-color: #03A63C; }
+
+
+.social-button:hover {
+    opacity: 0.9;
+}
+
+
+.links a {
         margin: 10px;
         display: inline-block;
         text-decoration: none;
@@ -43,6 +57,9 @@ th, td {
         padding: 10px 20px;
         border-radius: 20px;
     }
+
+
+
 
     .table-centered {
         margin-left: auto;
