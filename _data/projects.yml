@@ -12,3 +12,24 @@
   description: A bioinformatics tool built entirely in Bash, for running fastqc, sequence alignment and bioinformatics analysis of a dynamic genomic dataset. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 1 and obtained 85%.
   link: https://github.com/GrignardReagent/ProteoQuest
   image_url: https://grignardreagent.github.io/BPSM_ICA1.webp
+
+- name: Drug Discovery Website Design (Under construction)
+  description: An interactive drug discovery website employing AI for generating novel drug molecules. This project is currently under construction.
+  link: https://github.com/GrignardReagent?tab=repositories
+
+- name: ChemPALS Website Design (Ongoing)
+  description: A website for ChemPALS, a peer-assisted learning scheme that I have led and developed for chemistry students at the University of Edinburgh. The development of this website is ongoing and more updates will be on it very soon!
+  link: https://chempals.github.io/
+  image_url: https://grignardreagent.github.io/chempals_logo.png
+
+- name: Object-Oriented Pipeline Development for a Smith Waterman Algorithm Programme (Completed but kept private for now)
+  description: A Python programme for the Smith Waterman algorithm, developed as part of the Bioinformatics Algorithm In-Course Assessment. This is kept private until marks are released.
+  link: https://github.com/GrignardReagent?tab=repositories
+
+- name: Modelling Antibiotic Impact on Ribosomal Dynamics in Escherichia coli (Completed but kept private for now)
+  description: A research project to model the impact of antibiotics on ribosomal dynamics in Escherichia coli, as part of the Practical Systems Biology (PSB) course. This is kept private until marks are released.
+  link: https://github.com/GrignardReagent?tab=repositories
+
+- name: Computational drug design methods - a self-regulated learning experiment (Completed but kept private for now)
+  description: A self-led research project to compare the performance of different docking software for use in the drug design against the main protease of SARS-CoV-2. This is kept private until all relevant materials are prepared.
+  link: https://github.com/GrignardReagent?tab=repositories
