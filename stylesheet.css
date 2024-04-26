@@ -202,7 +202,6 @@ th, td {
 .content {
     padding: 0 18px;
     max-height: 0;
-    display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: left;

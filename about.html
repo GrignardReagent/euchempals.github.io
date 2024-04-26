@@ -36,20 +36,22 @@ title: About Me
             <p>You can download a copy of my CV <a href="downloads/Xi-Yang-CV April 2024.pdf" download>here</a>.</p>
         </div>
     </main>
-    
-    <script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
         var coll = document.getElementsByClassName("collapsible");
         for (var i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
                 } else {
-                    content.style.display = "block";
-                }
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
             });
         }
-    </script>
+    });
+</script>
 </body>
 </html>
