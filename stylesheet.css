@@ -180,18 +180,19 @@ th, td {
     margin-right: auto;
 }
 
-
 /*collapsible tab*/
 .collapsible {
-    background-color: transparent;
+    background-color: #D9B79A;
     color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
-    /* text-align: center; */
+    text-align: left;
     outline: none;
-    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 24px;
 }
 
 .active, .collapsible:hover {
@@ -199,8 +200,9 @@ th, td {
 }
 
 .content {
-    padding: 18px;
+    padding: 0 18px;
     max-height: 0;
+    display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: left;
