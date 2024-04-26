@@ -16,10 +16,14 @@ title: About Me
     <img src="myself.jpg" alt="Myself" style="width: 100%; max-width: 500px;">
     <main>
         <section>
-            <h2>Introduction</h2>
+        <button class="collapsible">Introduction</button>
+        <div class="content">
             <p>Hello! I'm <strong>Xi Yang (Ian)</strong>, a passionate Computational Chemist and an aspiring expert in the integration of artificial intelligence with chemistry. I am currently a Master's student in Bioinformatics at the University of Edinburgh, and I am working towards my goal of pursuing a PhD in computational chemistry, specifically in the field of Computer-Aided Drug Design (CADD).</p>
+        </div>
         </section>
         
+        <button class="collapsible">My Journey</button>
+        <div class="content">
         <section>
             <h2>Education</h2>
             <p>I hold an MChem in Medicinal and Biological Chemistry from the University of Edinburgh, where I developed a strong foundation in both the theoretical and practical aspects of chemistry and drug design. My current studies in Bioinformatics are building my skills in data analysis and the application of machine learning techniques in biological data.</p>
@@ -49,8 +53,21 @@ title: About Me
             <h2>My CV</h2>
             <p>You can download a copy of my CV <a href="downloads/Xi-Yang-CV April 2024.pdf" download>here</a>.</p>
         </section>
-
+    </div>
     </main>
-
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

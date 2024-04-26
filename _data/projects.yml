@@ -6,12 +6,10 @@
 - name: ProteoQuest (Completed)
   description: An interactive tool built using Python for exploring protein sequences within the NCBI protein database. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 2 and obtained 90%.
   link: https://github.com/GrignardReagent/ProteoQuest
-  image_url: https://grignardreagent.github.io/BPSM_ICA2.webp
 
 - name: Pipeline Development for the Dynamic Bioinformatics Analysis of Genomic Data (Completed)
   description: A bioinformatics tool built entirely in Bash, for running fastqc, sequence alignment and bioinformatics analysis of a dynamic genomic dataset. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 1 and obtained 85%.
   link: https://github.com/GrignardReagent/ProteoQuest
-  image_url: https://grignardreagent.github.io/BPSM_ICA1.webp
 
 - name: Drug Discovery Website Design (Under construction)
   description: An interactive drug discovery website employing AI for generating novel drug molecules. This project is currently under construction.
