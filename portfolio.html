@@ -19,9 +19,8 @@ title: Portfolio
             <!-- for loop here to display project info -->
             {% for project in site.data.projects %}
                 <div>
-                <button class="collapsible">Contact Info</button>
+                <button class="collapsible">{{ project.name }}</button>
                 <div class="content">
-                <h2>{{ project.name }}</h2>
                 <p>{{ project.description }}</p>
                 <!-- Optionally display an image if the URL is provided -->
                 {% if project.image_url %}

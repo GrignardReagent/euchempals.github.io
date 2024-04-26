@@ -150,16 +150,22 @@ th, td {
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
-    color: #0D0D0D;
+    color: #F2D9BB;
     font-weight: bold;
+    font-family: Arial, sans-serif; /* Ensures consistent font across all buttons */
+    text-align: center;
 }
 
-/* Specific styles for each social media platform */
-.facebook { background-color:  #D9B79A; }
-.twitter { background-color: #A6836F; }
-.instagram { background-color: #735E51; }
-.linkedin { background-color: #735E51; }
+.social-button i {
+    margin-right: 8px; /* Adds spacing between the icon and text */
+}
 
+/* Specific styles for the button to each social media platform */
+/* .facebook { background-color:  #D9B79A; } */
+.twitter { background-color: #D9B79A; }
+/* .instagram { background-color: #735E51; } */
+.linkedin { background-color: #A6836F; }
+.github { background-color: #735E51; }
 
 .social-button:hover {
     opacity: 0.9;
