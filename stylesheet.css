@@ -194,10 +194,10 @@ th, td {
     font-weight: bold;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 24px;
+    box-sizing: border-box;
 }
-
 .active, .collapsible:hover {
-    background-color: #735E51;
+    background-color: #D9B79A;
 }
 
 .content {
