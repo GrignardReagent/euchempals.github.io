@@ -150,10 +150,10 @@ th, td {
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
-    color: #F2D9BB;
     font-weight: bold;
     font-family: Arial, sans-serif; /* Ensures consistent font across all buttons */
     text-align: center;
+    color: #0D0D0D;
 }
 
 .social-button i {
