@@ -17,41 +17,44 @@ title: About Me
     <main>
         <section>
         <h2>A Brief Introduction</h2>
-            <p>Hello! I'm <strong>Xi Yang (Ian)</strong>, a passionate Computational Chemist and an aspiring expert in the integration of artificial intelligence with chemistry. I am currently a Master's student in Bioinformatics at the University of Edinburgh, and I am working towards my goal of pursuing a PhD in computational chemistry, specifically in the field of Computer-Aided Drug Design (CADD).</p>
+            <p>Hello! I'm <strong>Xi Yang (Ian)</strong>, a passionate Computational Chemist and an aspiring expert in the integration of artificial intelligence with chemistry. I am currently a Master's student in Bioinformatics at the University of Edinburgh, and I am actively looking for a PhD in Computational Chemistry / Biology / Bioinformatics, specifically in the field of Computer-Aided Drug Design (CADD).</p>
         </section>
-        
-        <button class="collapsible">My Journey</button>
+
+        <div id="aboutUsSection">
+        <button class="collapsible"><span class="hamburger-icon"></span>My Journey</button>
         <div class="content">
-            <h2>Education</h2>
-            <p>I hold an MChem in Medicinal and Biological Chemistry from the University of Edinburgh, where I developed a strong foundation in both the theoretical and practical aspects of chemistry and drug design. My current studies in Bioinformatics are building my skills in data analysis and the application of machine learning techniques in biological data.</p>
-            <h2>Professional Experience</h2>
-            <p>As a Peer Support Student Coordinator (similar to a Project Coordinator) at Edinburgh's School of Chemistry, I lead a team to develop innovative peer support models that assist students in their academic and personal development. This role has honed my skills in project management, teamwork, and leadership.</p>
-            <h2>Research and Projects</h2>
-            <p>My research interests lie at the intersection of chemistry, biology and AI. I have worked on several projects across different fields of chemistry, including the development of 2 sustainable large-scale pharmaceutical processes that eliminates the use of hazardous reagents by a wopping annual amount of 230,000 litres; the development of 2 bioinformatics programmes using Python and Bash; and currnetly I am working on the pipeline development for a diffusion model for molecular generation under the background of antimicrobial resistance.</p>
-            <h2>Future Goals</h2>
+            <h3>Education</h3>
+            <p>I hold an MChem in Medicinal and Biological Chemistry from the University of Edinburgh, where I developed a strong foundation in both the theoretical and practical aspects of chemistry and drug design. I am constantly building my skills in data analysis and the application of machine learning techniques in biological data through my second Master's degree in Bioinformatics.</p>
+            <h3>Professional Experience</h3>
+            <p>As a Peer Support Student Coordinator (similar to a Project Coordinator) at Edinburgh's School of Chemistry, I lead a team to develop innovative peer support models that assist students in their academic and personal development. Throughout my time in this role, I've gone above and beyond my job description and was awarded the <a href="https://www.ed.ac.uk/student-experience-grants/about">Student Experience Grant</a> to organise site visits to 3 chemical companies for 40 students, further enhancing the student experience and pioneering academia-industry collaborations. This role has perfected my skills in project management, teamwork, and leadership.</p>
+            <h3>Research and Projects</h3>
+            <p>My research interests lie at the intersection of chemistry, biology and AI. I have worked on several projects across different fields of chemistry, including the development of 2 sustainable large-scale pharmaceutical processes that eliminated the use of hazardous reagents by a wopping annual amount of 230,000 litres; the development of 2 bioinformatics programmes using Python and Bash; and currnetly I am working on the pipeline development for a diffusion model for molecular generation under the background of antimicrobial resistance.</p>
+            <h3>Future Goals</h3>
             <p>Looking forward, I aim to contribute to research in using diffusion model for molecular generation in drug discovery, with a particular focus on antimicrobial resistance. I am particularly interested in opportunities that allow me to combine my expertise in chemistry and bioinformatics to solve real-world problems.</p>
-            <h2>Contact</h2>
+            <h3>Contact</h3>
             <p>If you wish to discuss potential collaborations or just share ideas, feel free to <a href="mailto:ian16yang@gmail.com">email me</a> or connect with me on <a href="https://www.linkedin.com/in/ianyangxi/">LinkedIn</a>.</p>
-            <h2>My CV</h2>
+            <h3>My CV</h3>
             <p>You can download a copy of my CV <a href="downloads/Xi-Yang-CV April 2024.pdf" download>here</a>.</p>
+        </div>
         </div>
     </main>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) { 
-        var coll = document.getElementsByClassName("collapsible");
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                } 
-            });
-        }
-    });
+    // javascript for collapsible button
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
 </script>
 </body>
 </html>
