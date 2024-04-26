@@ -13,12 +13,14 @@ title: Portfolio
 <body>
     <header>
         <h1>My Portfolio</h1>
-        <p>Welcome to my portfolio. Here are some of the projects I have worked on.</p>
+        <p>Welcome to my portfolio. Here is a list of the projects I have worked on:</p>
     </header>
     <section>
-        <ul>
+            <!-- for loop here to display project info -->
             {% for project in site.data.projects %}
-            <li>
+                <div>
+                <button class="collapsible">Contact Info</button>
+                <div class="content">
                 <h2>{{ project.name }}</h2>
                 <p>{{ project.description }}</p>
                 <!-- Optionally display an image if the URL is provided -->
@@ -26,9 +28,27 @@ title: Portfolio
                 <img src="{{ project.image_url }}" alt="Image for {{ project.name }}" style="width: 100%; max-width: 750px;"><br>
                 {% endif %}
                 <a href="{{ project.link }}">Learn more</a>
-            </li>
+                </div></div>
             {% endfor %}
-        </ul>
     </section>
+
+
+    <script>
+        // javascript for collapsible button
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
