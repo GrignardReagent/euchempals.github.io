@@ -9,7 +9,7 @@
 
 - name: Pipeline Development for the Dynamic Bioinformatics Analysis of Genomic Data (Completed)
   description: A bioinformatics tool built entirely in Bash, for running fastqc, sequence alignment and bioinformatics analysis of a dynamic genomic dataset. This project was developed as part of the Bioinformatics Programming and Systems Management (BPSM) In-Course Assessment 1 and obtained 85%.
-  link: https://github.com/GrignardReagent/ProteoQuest
+  link: https://github.com/GrignardReagent/ICA1
 
 - name: Drug Discovery Website Design (Under construction)
   description: An interactive drug discovery website employing AI for generating novel drug molecules. This project is currently under construction.
@@ -27,8 +27,8 @@
   description: A research project to model the impact of antibiotics on ribosomal dynamics in Escherichia coli, as part of the Practical Systems Biology (PSB) course. This is kept private until marks are released.
   link: https://github.com/GrignardReagent?tab=repositories
 
-- name: Computational drug design methods - a self-regulated learning experiment (Completed but kept private for now)
-  description: A self-led research project to compare the performance of different docking software for use in the drug design against the main protease of SARS-CoV-2. This is kept private until all relevant materials are prepared.
+- name: Comparative Assessment of Docking software for Virtual Screening of covid-19 drug candidates (Completed but kept private for now)
+  description: A self-led research project to compare the performance of different docking software (AutoDock Vina, rDock and Flare) for use in the drug design against the main protease of SARS-CoV-2. This is kept private until all relevant materials are prepared.
   link: https://github.com/GrignardReagent?tab=repositories
 
 - name: Optimisation of 2 Chemical Processes for Active Pharmaceutical Ingredients (APIs) (Completed)
